@@ -1,0 +1,114 @@
+    <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Aaltonaut Portfolio</title>
+    
+    <script src="js/jquery-1.6.2.min.js"></script>
+    
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link href="css/font-awesome.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/styles-index.css" rel="stylesheet">
+    <!--<link href="css/saara.css" rel="stylesheet">
+    <link href="css/jami.css" rel="stylesheet">-->
+    <!--<link href="css/emilia.css" rel="stylesheet">-->
+    <link href="css/kokeilu.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+    <body class="teambackground">
+    <style>.path {
+    stroke-dashoffset: 6000;
+    stroke-dasharray: 5000;}</style>
+
+
+
+    <div style="height: 100%">
+    
+    <div class="navbar navbar-fixed-top">
+     <ul class="topnav" style="font-family: robotolight;">
+        <li style="float:right"><b><a style="font-size:14px" href="contact.html">CONTACT</a></b></li>    
+        <li style="float:right"><b><a style="font-size:14px" href="courses.html">COURSES</a></b></li>
+        <li style="float:right"><b><a style="font-size:14px" href="about.html">ABOUT ME</a></b></li>
+        
+        <li style="float:left; font-family: archistico;"><b><a href="index.html" style="margin-left: 10px; font-size:22px; position:absolute;">PORTFOLIO</a></b>
+        <!--<img src='img/logo.png' style="width:15%;position:fixed; padding-top:45px; padding-left:7px;"></img>-->
+        </li>
+        </ul> 
+    </div>
+    <section class="lakephoto parallax" style="text-align:center;"> 
+<h2 class="title">AALTONAUT PORTFOLIO</h2>
+<p class="under">By Emilia Broman</p>
+    </section>
+    </div>
+
+    <div style="position: absolute;">
+    
+    <script> 
+    $(window).scroll(function() {
+    if ($(this).scrollTop() > 600){ // Set position from top to add class
+        $('ul').addClass("shrink");
+    } else {
+        $('ul').removeClass("shrink");
+    }
+    });
+    </script>
+    
+    <div class="block-wrapper-inner" style="padding-top:50px; background-color: white;">
+
+    </div>
+    </div>
+    <script>
+    $(document).ready(function() {
+  //variable for the 'stroke-dashoffset' unit
+  var $dashOffset = $(".path").css("stroke-dashoffset");
+  //on a scroll event - execute function
+  $(window).scroll(function() {
+    //calculate how far down the page the user is 
+    
+    var $percentageComplete = (($(window).scrollTop() / ($("html").height())) * 100);
+    //convert dashoffset pixel value to interger
+    var $newUnit = parseInt($dashOffset, 10);
+    //get the value to be subtracted from the 'stroke-dashoffset'
+    var $offsetUnit = $percentageComplete * ($newUnit / 100);
+    console.log($offsetUnit);
+    //set the new value of the dashoffset to create the drawing effect
+    $(".path").css("stroke-dashoffset", -$newUnit + $offsetUnit);
+    });
+    });</script>
+    
+    <script>
+
+$(window).scroll(function(){
+    $("#svg1").css("opacity", 1 - $(window).scrollTop() / 400);
+});
+
+</script>   
+    
+    
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!--script src="./Tinyone - HTML_files/jquery.min.js"></script>
+    <script src="./Tinyone - HTML_files/bootstrap.min.js"></script>
+    <script src="./Tinyone - HTML_files/offcanvas.js"></script>
+    <script src="./Tinyone - HTML_files/function.js"></script-->
+  
+
+</body></html>
