@@ -65,20 +65,27 @@
     <div class="block-wrapper-inner" style="padding-top: 15px; position: relative">
 		<div class="container" style="width: 75%; font-family: robotolight; color: #4d4d33">
 		</br>
-			<h2 id = "ONE">About Me</h1>
+  <section>      
+        <span class="anchor" id="ksa"></span>
+            <div class="section"></div>
+
+			<h5 id = "ONE">About Me</h5>
             </br>
 			<p style="font-size:19px;" class="justify">I am a Bachelor’s student in bioinformation technology at Aalto University School of Electrical Engineering. I took part in the Aaltonaut minor programme, which is Aalto University’s Bachelor’s Minor Programme on Interdisciplinary Product Development. I have a huge interest in the development of new medical and health-related technologies. </p>
         </br>
 			<p style="font-size:19px;" class="justify">Read <a href="courses.html">here</a> about the Aaltonaut courses I participated in. </p>
         </br> 
-            <h1>Knowledge, Skills and Attitudes</h1>
+        <span class="anchor" id="ksa"></span>
+            <div class="section"></div>
+            <h5>Knowledge, Skills and Attitudes</h5>
         </br>
             <p style="font-size:19px;" class="justify"><i>A detailed list of all the knowledge, skills and attitudes (KSA) I have gained during my studies as a student of the Aaltonaut minor programme.</i></p>
 </br>
-            
-            <h2 id="TWO"><b>Knowledge</b></h2>
-            <p style="font-size:19px;" class="justify"><i>Aaltonaut is a melting pot of knowledge. Thanks to the professional teaching staff I have had the opportunity to learn a lot of things, varying from business to materials. </i></p>
-            <section> 
+
+            <span class="anchor" id="knowledge"></span>
+            <div class="section"></div>
+            <h5 id="TWO"><b>Knowledge</b></h5>
+            <p style="font-size:19px;" class="justify"><i>Aaltonaut is a melting pot of knowledge. Thanks to the professional teaching staff I have had the opportunity to learn a lot of things, varying from business to materials. </i></p> 
             <span class="anchor" id="materials"></span>
             <div class="section">
             <h4><b>Materials</b></h4>
@@ -227,7 +234,7 @@ $(window).scroll(function(){
     
     <script> 
     var links = $('ul.botnav li a');
-    var h1s = $("h1");
+    var h1s = $("h5");
     var alreadyFound = 0;
     
     $(window).scroll(function() {
