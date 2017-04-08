@@ -447,6 +447,10 @@ section h2 {
 	font-size: 70px;
 	color: white;
 }
+section h5 {
+	font-size: 35px;
+
+}
 
 p.justify {
 	text-align: justify;
@@ -647,3 +651,11 @@ ul.topnav li a img {
   color: #FFF;
   opacity: 0.95;
 }
+
+.anchor{
+  display: block;
+  height: 50px; /*same height as header*/
+  margin-top: -50px; /*same height as header*/
+  /*visibility: hidden;*/
+}
+
