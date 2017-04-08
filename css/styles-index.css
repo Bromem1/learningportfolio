@@ -656,6 +656,6 @@ ul.topnav li a img {
   display: block;
   height: 50px; /*same height as header*/
   margin-top: -50px; /*same height as header*/
-  /*visibility: hidden;*/
+  visibility: hidden;
 }
 
