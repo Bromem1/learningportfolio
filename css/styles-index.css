@@ -537,7 +537,7 @@ progress::-moz-progress-bar {
 
 .title {
 	font-family: "archistico"; 
-	font-size: 90px; 
+	font-size: 10em; 
 	letter-spacing: 2px;
 	/*text-shadow: 4px 4px 0px rgba(0,0,0,0.2);*/
 
